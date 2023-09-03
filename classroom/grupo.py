@@ -18,6 +18,7 @@ class Grupo:
             if isinstance(i, list):
                 lista.remove(i)
                 lista.extend(i)
+        lista=lista[1:]+[lista[0]]
         self.listadoAlumnos = self.listadoAlumnos + lista
 
         
